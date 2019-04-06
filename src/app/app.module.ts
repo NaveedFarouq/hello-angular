@@ -8,6 +8,8 @@ import { ChildComponent } from './child/child.component';
 import { CommentListComponent } from './comment-list/comment-list.component';
 import { CommentItemComponent } from './comment-item/comment-item.component';
 import { CounterComponent } from './counter/counter.component';
+import { CommmentService } from './commment.service';
+import { CommentsList2Component } from './comments-list2/comments-list2.component';
 
 @NgModule({
   declarations: [
@@ -17,12 +19,13 @@ import { CounterComponent } from './counter/counter.component';
     ChildComponent,
     CommentListComponent,
     CommentItemComponent,
-    CounterComponent
+    CounterComponent,
+    CommentsList2Component
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [CommmentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

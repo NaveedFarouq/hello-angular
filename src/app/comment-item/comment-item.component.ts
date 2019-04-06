@@ -7,12 +7,20 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CommentItemComponent implements OnInit {
 
-  // Decorated comment 
-  @Input() comment;
-  
+  private _comment;
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() {}
+
+  @Input()
+  set comment(comment) {
+    this._comment = Object.assign(comment, {
+       author: comment.author.toUpperCase()
+    });
+  }
+
+  get comment() {
+    return this._comment
   }
 
 }

@@ -41,4 +41,8 @@ export class AppComponent implements OnInit {
     }
   ]
 
+  onShowComment(comment) {
+    alert(comment.content);
+  }
+
 }

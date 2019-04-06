@@ -1,4 +1,5 @@
 <!-- sending to it child component one at a time -->
 <app-comment-item 
-  *ngFor="let comment of comments" [comment]="comment">
+  *ngFor="let comment of comments" [comment]="comment"
+  (dblclick)="showComment(comment)">
 </app-comment-item>

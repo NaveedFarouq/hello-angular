@@ -15,5 +15,7 @@
 <!-- //component communication -->
 <div>
   <h2>Comments</h2>
-  <app-comment-list [comments]="comments"></app-comment-list>
+  <app-comment-list [comments]="comments"
+  (onShowComment)="onShowComment($event)">
+  </app-comment-list>
 </div>

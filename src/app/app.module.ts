@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { QuoteComponent } from './quote/quote.component';
 import { TabComponent } from './tab/tab.component';
 import { ChildComponent } from './child/child.component';
+import { CommentListComponent } from './comment-list/comment-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     QuoteComponent,
     TabComponent,
-    ChildComponent
+    ChildComponent,
+    CommentListComponent
   ],
   imports: [
     BrowserModule

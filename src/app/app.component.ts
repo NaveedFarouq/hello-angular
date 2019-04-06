@@ -23,5 +23,22 @@ export class AppComponent implements OnInit {
       ] 
      this.loading = false; 
    }, 3000) 
- } 
+  } 
+
+  //component communication
+  comments = [
+    {
+      author: 'Jay Kay',
+      content: 'TypeScript makes Angular awesome'
+    },
+    {
+      author: 'William',
+      content: 'Yeah, right!'
+    },
+    {
+      author: 'Raphael',
+      content: 'Got stuck passing data around'
+    }
+  ]
+
 }

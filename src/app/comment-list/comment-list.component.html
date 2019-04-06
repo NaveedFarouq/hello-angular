@@ -2,3 +2,7 @@
   <h3>{{comment.author}}</h3>
   <p>{{comment.content}}</p>
 </div>
+<!-- sending to it child component one at a time -->
+<app-comment-item 
+  *ngFor="let comment of comments" [comment]="comment">
+</app-comment-item>

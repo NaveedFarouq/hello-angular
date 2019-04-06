@@ -20,11 +20,14 @@
   </app-comment-list>
   
 <!-- counter -->
-  <h2>Counter</h2>
+  <!-- <h2>Counter</h2>
   <app-counter #counter></app-counter>
   <button (click)="counter.increment()">++</button>
-  <button (click)="counter.decrement()">--</button>
+  <button (click)="counter.decrement()">--</button> -->
 
 </div>
 
-
+<!-- viewing child component using viewChild -->
+<app-counter></app-counter>
+<button (click)="counterComponent.increment()">++</button>
+<button (click)="counterComponent.decrement()">--</button>

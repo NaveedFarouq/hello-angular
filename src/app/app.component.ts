@@ -1,4 +1,5 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, ViewChild } from '@angular/core';
+import { CounterComponent } from './counter/counter.component';
 
 @Component({ 
   selector: 'app-root', 
@@ -9,6 +10,10 @@ export class AppComponent implements OnInit {
   title: string = 'Items in Bag'; 
   items: Array<string> = []; 
   loading: boolean = false;  
+  
+  // accessing child component with viewChild
+  @ViewChild(CounterComponent)
+  counterComponent: CounterComponent
 
   ngOnInit () { 
     this.loading = true;  

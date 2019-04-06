@@ -24,9 +24,9 @@ export class TabComponent implements OnInit, AfterContentInit {
     this.tabContents[0].style.display = "block";
     this.tabLinks[0].className = " active";
   }
+
   openTab(evt, cityName) {
-    console.log('nav',evt)
-    console.log('nav2',cityName)
+    
     for (let i = 0; i < this.tabContents.length; i++) {
       this.tabContents[i].style.display = "none";
     }

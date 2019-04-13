@@ -17,8 +17,13 @@ export class CommentsList2Component implements OnInit {
     this.comments = this.commentService.getComments();
   }
   // call this service from html then pass the value to teh service fro processing
+  
   removeComment(comment) {
-    this.comments = this.commentService.removeComment(comment);
-}
+    this.comments = this.commentService.removeComments(comment);
+  }
+
+  showComment(comment) {
+    this.commentService.showComment(comment);
+  }
 
 }

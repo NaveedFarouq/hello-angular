@@ -10,6 +10,7 @@ import { CommentItemComponent } from './comment-item/comment-item.component';
 import { CounterComponent } from './counter/counter.component';
 import { CommmentService } from './commment.service';
 import { CommentsList2Component } from './comments-list2/comments-list2.component';
+import { CommentDetailComponent } from './comment-detail/comment-detail.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CommentsList2Component } from './comments-list2/comments-list2.componen
     CommentListComponent,
     CommentItemComponent,
     CounterComponent,
-    CommentsList2Component
+    CommentsList2Component,
+    CommentDetailComponent
   ],
   imports: [
     BrowserModule
